@@ -1,0 +1,26 @@
+{
+  "name": "stencil-react-integration-webpack",
+  "version": "1.0.0",
+  "description": "How to integrate Stencil components into React apps using webpack",
+  "scripts": {
+    "build": "npm run build.stencil && npm run build.react",
+    "build.stencil": "cd stencil-components && npm run build",
+    "build.react": "cd react-app && npm run build",
+    "run.stencil": "cd stencil-components && npm start",
+    "run.react": "cd react-app && npm start",
+    "start": "concurrently -k  \"npm run run.stencil\" \"npm run run.react\""
+  },
+  "author": "",
+  "license": "ISC",
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "react-app",
+      "stencil-components"
+    ],
+    "nohoist": ["stencil-components"]
+  },
+  "devDependencies": {
+    "concurrently": "^3.5.1"
+  }
+}

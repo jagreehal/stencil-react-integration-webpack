@@ -1,0 +1,87 @@
+{
+  "compiler": {
+    "name": "@stencil/core",
+    "version": "0.7.24"
+  },
+  "app": {
+    "namespace": "StencilApp",
+    "fsNamespace": "stencil-app",
+    "components": 1,
+    "entries": 1,
+    "bundles": 4
+  },
+  "options": {
+    "minifyJs": true,
+    "minifyCss": true,
+    "hashFileNames": true,
+    "hashedFileNameLength": 8,
+    "buildEs5": true
+  },
+  "components": [
+    {
+      "tag": "my-app",
+      "dependencies": [],
+      "dependencyOf": []
+    }
+  ],
+  "entries": [
+    {
+      "entryId": "entry:my-app",
+      "components": [
+        {
+          "tag": "my-app",
+          "dependencies": [],
+          "dependencyOf": []
+        }
+      ],
+      "bundles": [
+        {
+          "fileName": "n4fu0cwo.js",
+          "size": 1252,
+          "outputs": [
+            "dist/stencil-app/n4fu0cwo.js",
+            "www/build/stencil-app/n4fu0cwo.js"
+          ]
+        },
+        {
+          "fileName": "n4fu0cwo.sc.js",
+          "size": 1321,
+          "outputs": [
+            "dist/stencil-app/n4fu0cwo.sc.js",
+            "www/build/stencil-app/n4fu0cwo.sc.js"
+          ],
+          "scopedStyles": true
+        },
+        {
+          "fileName": "n4fu0cwo.es5.js",
+          "size": 1745,
+          "outputs": [
+            "dist/stencil-app/n4fu0cwo.es5.js",
+            "www/build/stencil-app/n4fu0cwo.es5.js"
+          ],
+          "target": "es5"
+        },
+        {
+          "fileName": "n4fu0cwo.sc.es5.js",
+          "size": 1814,
+          "outputs": [
+            "dist/stencil-app/n4fu0cwo.sc.es5.js",
+            "www/build/stencil-app/n4fu0cwo.sc.es5.js"
+          ],
+          "target": "es5",
+          "scopedStyles": true
+        }
+      ],
+      "inputs": [
+        "dist/collection/components/my-app/my-app.js"
+      ],
+      "encapsulations": [
+        "shadow"
+      ]
+    }
+  ],
+  "sourceGraph": {
+    "src/components/my-app/my-app.tsx": []
+  },
+  "collections": []
+}
