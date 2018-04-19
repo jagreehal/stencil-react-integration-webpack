@@ -1,5 +1,7 @@
 # Integrating Stencil components into React apps
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/jagreehal/stencil-react-integration-webpack.svg)](https://greenkeeper.io/)
+
 This is an example of how to integrate [Stencil](https://stenciljs.com/) components into [React](https://reactjs.org/) apps that use [webpack](https://webpack.js.org/).
 
 
